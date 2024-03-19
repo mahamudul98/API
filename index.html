@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+
+    <script>
+        const profile ={
+            id:234, 
+            name:"mahmudul", 
+            job:'jsDev', 
+            friends:['rahim','karim',''],
+            friendsAge:[34,56,26]
+    };
+        const jsToJson = JSON.stringify(profile);
+        console.log(jsToJson);
+
+        const jsonToJsObject = JSON.parse(jsToJson);
+        console.log(jsonToJsObject);
+    </script>
+</body>
+</html>
